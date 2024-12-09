@@ -1,0 +1,56 @@
+// Base -reset
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1.2;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  line-height: 1.6;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+// This is a Normalize that makes browsers render all elements more consistently
+// and in line with modern standards.

@@ -1,0 +1,33 @@
+// Utilities
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.flow-content--large {
+  --flow-space: 3rem;
+}
+
+.shadow {
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+.bg-dark {
+  background: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+.text-accent {
+  color: var(--clr-accent-500);
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+}

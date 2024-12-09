@@ -1,0 +1,83 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1.2;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  line-height: 1.6;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.flow-content--large {
+  --flow-space: 3rem;
+}
+
+.shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.bg-dark {
+  background: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+.text-accent {
+  color: var(--clr-accent-500);
+}
+
+.container {
+  padding: 0 var(--spacer);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
