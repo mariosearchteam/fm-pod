@@ -1,4 +1,4 @@
 // Font Size
-$large-heading: 32px;
-$medium-heading: 24px;
-$small-heading: 18px;
+$fs-heading: clamp(2rem, 6vw, 3rem);
+$fs-regular: clamp(1rem, 2.5vw, 1.125rem);
+$fs-small: clamp(0.75rem, 1.75vw, 1rem);

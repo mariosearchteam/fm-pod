@@ -1,5 +1,5 @@
 // Base -reset
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;400;700&display=swap");
 
 *,
 *::before,
@@ -43,6 +43,9 @@ img {
 
 body {
   line-height: 1.6;
+  font-family: $ff;
+  font-size: $fs-regular;
+  color: $clr-primary-300;
 }
 
 input,

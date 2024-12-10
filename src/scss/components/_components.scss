@@ -1,1 +1,64 @@
 // Components
+.form {
+  display: grid;
+  gap: $spacer-100;
+  margin-top: $spacer-200;
+  & span {
+    color: $clr-red;
+    font-size: 0.75rem;
+    padding-left: $spacer-400;
+  }
+}
+
+input {
+  padding: $spacer-150;
+  padding-left: $spacer-400;
+  border-radius: $spacer-400;
+  border: none;
+  background: $clr-primary-800;
+  color: $clr-white;
+  font-size: $fs-small;
+}
+
+.button {
+  border: none;
+  background: $clr-accent;
+  padding: $spacer-150 $spacer-500;
+  display: block;
+  border-radius: $spacer-400;
+  font-weight: $fw-bold;
+  font-size: $fs-small;
+  &:hover,
+  &:focus-visible {
+    background: lighten($clr-accent, 10%);
+  }
+}
+
+input:not(:focus):invalid {
+  color: $clr-red;
+  border: 2px solid $clr-red;
+}
+
+.form > .error {
+  display: none;
+}
+
+.form > :not(:focus):invalid + .error {
+  display: block;
+}
+
+@media (min-width: 40rem) {
+  .form {
+    width: 25rem;
+    position: relative;
+    & input {
+      border: 2px solid $clr-primary-800;
+    }
+    & .button {
+      position: absolute;
+      width: fit-content;
+      right: 2px;
+      top: 2px;
+    }
+  }
+}

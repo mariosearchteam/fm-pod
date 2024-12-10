@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -42,6 +41,9 @@ img {
 
 body {
   line-height: 1.6;
+  font-family: "Chivo", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  color: #c2cbe5;
 }
 
 input,
@@ -51,29 +53,218 @@ textarea {
   overflow: auto;
 }
 
+body {
+  background: #121725;
+}
+
+.main {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: url("/assets/mobile/image-host.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.main::before {
+  content: "";
+  background: #121725;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+.main__bg-image {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  padding: 3.5rem 0;
+}
+.header img {
+  margin-inline: auto;
+}
+
+.cta__title {
+  margin-bottom: 1.5rem;
+  color: #54e6af;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+.cta__title span {
+  color: #fff;
+}
+.cta__description {
+  font-weight: 100;
+}
+.cta__footer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+}
+.cta__logos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.cta__logos img {
+  opacity: 0.5;
+  max-height: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .main {
+    background: url("/assets/tablet/image-host.jpg") no-repeat;
+    background-position: right top;
+    text-align: left;
+  }
+  .main__bg-image {
+    background: #121725;
+    max-width: 37rem;
+    min-height: 70%;
+    padding: 5rem 2.5rem 0;
+  }
+  .main::before {
+    opacity: 0;
+  }
+  .main::after {
+    position: absolute;
+    content: url("/assets/desktop/bg-pattern-dots.svg");
+    top: 77%;
+    right: 0;
+  }
+  .header img {
+    margin-left: 2.5rem;
+  }
+  .cta__title {
+    max-width: 12ch;
+  }
+  .cta__description {
+    max-width: 40ch;
+  }
+  .cta__footer {
+    flex-direction: column;
+  }
+  .cta__logos img {
+    max-height: 2rem;
+  }
+}
+@media (min-width: 60rem) {
+  .header img {
+    margin-left: 10rem;
+  }
+  .main {
+    background: url("/assets/desktop/image-host.jpg") no-repeat;
+    background-position: right center;
+  }
+  .main__bg-image {
+    max-width: 64rem;
+    padding: 6.5rem 10rem;
+  }
+  .cta__title {
+    max-width: 22ch;
+  }
+  .cta__description {
+    max-width: 40ch;
+  }
+  .cta__logos {
+    max-width: 33rem;
+  }
+  .cta__logos img {
+    max-height: 2.5rem;
+  }
+  .form {
+    width: 28rem;
+  }
+}
+.form {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.form span {
+  color: #fb3e3e;
+  font-size: 0.75rem;
+  padding-left: 2rem;
+}
+
+input {
+  padding: 0.75rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  border: none;
+  background: #2c344b;
+  color: #fff;
+  font-size: clamp(0.75rem, 1.75vw, 1rem);
+}
+
+.button {
+  border: none;
+  background: #54e6af;
+  padding: 0.75rem 2.5rem;
+  display: block;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: clamp(0.75rem, 1.75vw, 1rem);
+}
+.button:hover, .button:focus-visible {
+  background: #80edc4;
+}
+
+input:not(:focus):invalid {
+  color: #fb3e3e;
+  border: 2px solid #fb3e3e;
+}
+
+.form > .error {
+  display: none;
+}
+
+.form > :not(:focus):invalid + .error {
+  display: block;
+}
+
+@media (min-width: 40rem) {
+  .form {
+    width: 25rem;
+    position: relative;
+  }
+  .form input {
+    border: 2px solid #2c344b;
+  }
+  .form .button {
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    right: 2px;
+    top: 2px;
+  }
+}
 .flow-content > * + * {
-  margin-top: var(--flow-space, var(--spacer));
+  margin-top: var(--flow-space, 1rem);
 }
 
 .flow-content--large {
   --flow-space: 3rem;
 }
 
-.shadow {
-  box-shadow: var(--box-shadow);
-}
-
-.bg-dark {
-  background: var(--clr-neutral-900);
-  color: var(--clr-neutral-100);
-}
-
-.text-accent {
-  color: var(--clr-accent-500);
-}
-
 .container {
-  padding: 0 var(--spacer);
+  padding: 0 2rem;
   max-width: 70rem;
   margin: 0 auto;
 }
