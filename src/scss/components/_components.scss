@@ -28,6 +28,7 @@ input {
   border-radius: $spacer-400;
   font-weight: $fw-bold;
   font-size: $fs-small;
+  color: $clr-primary-900;
   &:hover,
   &:focus-visible {
     background: lighten($clr-accent, 10%);

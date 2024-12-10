@@ -129,7 +129,7 @@ body {
 
 @media (min-width: 40rem) {
   .main {
-    background: url("/assets/tablet/image-host.jpg") no-repeat;
+    background: url("https://mariosearchteam.github.io/fm-pod//assets/tablet/image-host.jpg") no-repeat;
     background-position: right top;
     text-align: left;
   }
@@ -144,7 +144,7 @@ body {
   }
   .main::after {
     position: absolute;
-    content: url("/assets/desktop/bg-pattern-dots.svg");
+    content: url("https://mariosearchteam.github.io/fm-pod//assets/desktop/bg-pattern-dots.svg");
     top: 77%;
     right: 0;
   }
@@ -169,7 +169,7 @@ body {
     margin-left: 10rem;
   }
   .main {
-    background: url("/assets/desktop/image-host.jpg") no-repeat;
+    background: url("https://mariosearchteam.github.io/fm-pod//assets/desktop/image-host.jpg") no-repeat;
     background-position: right center;
   }
   .main__bg-image {
@@ -221,6 +221,7 @@ input {
   border-radius: 2rem;
   font-weight: 700;
   font-size: clamp(0.75rem, 1.75vw, 1rem);
+  color: #121725;
 }
 .button:hover, .button:focus-visible {
   background: #80edc4;

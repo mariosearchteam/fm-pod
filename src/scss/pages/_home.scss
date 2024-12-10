@@ -76,7 +76,8 @@ body {
 
 @media (min-width: 40rem) {
   .main {
-    background: url("/assets/tablet/image-host.jpg") no-repeat;
+    background: url("https://mariosearchteam.github.io/fm-pod//assets/tablet/image-host.jpg")
+      no-repeat;
     background-position: right top;
     text-align: left;
     &__bg-image {
@@ -90,7 +91,7 @@ body {
     }
     &::after {
       position: absolute;
-      content: url("/assets/desktop/bg-pattern-dots.svg");
+      content: url("https://mariosearchteam.github.io/fm-pod//assets/desktop/bg-pattern-dots.svg");
       top: 77%;
       right: 0;
     }
@@ -124,7 +125,8 @@ body {
     }
   }
   .main {
-    background: url("/assets/desktop/image-host.jpg") no-repeat;
+    background: url("https://mariosearchteam.github.io/fm-pod//assets/desktop/image-host.jpg")
+      no-repeat;
     background-position: right center;
     &__bg-image {
       max-width: 64rem;
